@@ -447,7 +447,7 @@ export default async function HomePage() {
               {recentUpdates.map((update, index) => (
                 <Link
                   key={update.id}
-                  href={`/updates/${update.id}`}
+                  href={`/updates/detail/${update.id}`}
                   className="group bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-2xl transition-all duration-300 animate-fadeInUp"
                   style={{
                     animationDelay: `${index * 100}ms`,

@@ -1,41 +1,54 @@
-// components/Footer.tsx
-import { Mail, Phone, MapPin } from "lucide-react";
+"use client";
+import { Mail, Phone, MapPin, Github, Linkedin, Globe } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          
+    <footer className="bg-gradient-to-br from-gray-50 via-white to-gray-100 border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand & Info */}
           <div>
             <h3 className="text-lg font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent mb-3">
               Amibara Global PLC
             </h3>
-            <p className="text-sm text-gray-600 mb-2">
-              Building tomorrow's businesses today.
+            <p className="text-sm text-gray-600 mb-3">
+              Building tomorrow’s businesses today.
             </p>
             <p className="text-xs text-gray-500">
-              Co-founder & CEO: <span className="font-semibold text-gray-700">Mohammed Hussen</span>
+              Co-founder & CEO:{" "}
+              <span className="font-semibold text-gray-700">
+                Mohammed Hussen
+              </span>
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 mb-3">Quick Links</h4>
+            <h4 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                <a
+                  href="/about"
+                  className="text-sm text-gray-600 hover:text-blue-700 transition-all duration-200"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/#startups" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                <a
+                  href="/#startups"
+                  className="text-sm text-gray-600 hover:text-blue-700 transition-all duration-200"
+                >
                   Our Startups
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                <a
+                  href="/contact"
+                  className="text-sm text-gray-600 hover:text-blue-700 transition-all duration-200"
+                >
                   Contact
                 </a>
               </li>
@@ -44,19 +57,24 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 mb-3">Get in Touch</h4>
+            <h4 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">
+              Get in Touch
+            </h4>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-gray-600">
-                <MapPin size={16} className="text-gray-400" />
+                <MapPin size={16} className="text-blue-500" />
                 Samara, Awash7
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-600">
-                <Phone size={16} className="text-gray-400" />
+                <Phone size={16} className="text-blue-500" />
                 0987025788 / 0711625120
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-600">
-                <Mail size={16} className="text-gray-400" />
-                <a href="mailto:info@amibara.global" className="hover:text-blue-600 transition-colors">
+                <Mail size={16} className="text-blue-500" />
+                <a
+                  href="mailto:info@amibara.global"
+                  className="hover:text-blue-700 transition-all duration-200"
+                >
                   info@amibara.global
                 </a>
               </li>
@@ -65,9 +83,23 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 border-t border-gray-200">
-          <p className="text-center text-xs text-gray-500">
-            © 2025 Amibara Global PLC. All rights reserved.
+        <div className="pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-center   gap-2">
+          <p className="text-xs text-gray-500 text-center sm:text-left">
+            © {new Date().getFullYear()}{" "}
+            <span className="font-semibold text-gray-700">
+              Amibara Global PLC
+            </span>
+            . All rights reserved.
+          </p>
+
+          <p className="text-xs text-gray-500 text-center sm:text-right">
+            Designed by{" "}
+            <a
+              href="https://github.com/awash-dev"
+              className="font-medium text-blue-700 hover:underline"
+            >
+              Awash Dev
+            </a>
           </p>
         </div>
       </div>
