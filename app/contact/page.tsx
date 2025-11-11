@@ -44,7 +44,7 @@ const ContactPage = () => {
                 Get in touch
               </h1>
               <p className="text-xl text-gray-600">
-                Have a question or want to work together? We'd love to hear from you.
+                Have a question or want to work together? We&apos;d love to hear from you.
               </p>
             </div>
 
@@ -115,7 +115,7 @@ const ContactPage = () => {
                   <CheckCircle2 className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
                   <div>
                     <p className="text-green-900 font-semibold text-sm">Message sent successfully!</p>
-                    <p className="text-green-700 text-sm">We'll get back to you as soon as possible.</p>
+                    <p className="text-green-700 text-sm">We&apos;ll get back to you as soon as possible.</p>
                   </div>
                 </div>
               )}

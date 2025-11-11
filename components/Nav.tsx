@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown, Sparkles, ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -136,7 +137,7 @@ const Navbar = () => {
                   <div className="absolute left-0 mt-3 w-80 bg-white/95 backdrop-blur-2xl rounded-2xl shadow-2xl border border-gray-200/50 overflow-hidden animate-in fade-in slide-in-from-top-5 duration-300">
                     <div className="p-2 space-y-1">
                       {startups.map((startup, idx) => (
-                        <a
+                        <Link
                           key={startup.name}
                           href={`/startup/${startup.name.toLowerCase().replace(/ /g, "-")}`}
                           className="flex items-center gap-4 p-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-purple-50/80 transition-all duration-200 group/item border border-transparent hover:border-blue-200/50"
@@ -155,7 +156,7 @@ const Navbar = () => {
                             size={16}
                             className="text-gray-400 opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300 flex-shrink-0"
                           />
-                        </a>
+                        </Link>
                       ))}
                     </div>
                    
@@ -164,12 +165,12 @@ const Navbar = () => {
               </div>
 
               {/* CTA Button */}
-              <a
-                href="/join"
+              <Link
+                href="/"
                 className="px-6 py-3 text-gray-900 bg-white rounded-xl hover:text-white font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 border border-gray-900"
               >
                 View Whitepaper
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -197,7 +198,7 @@ const Navbar = () => {
           <div className="px-4 pb-8 pt-4 space-y-2 bg-gradient-to-b from-white to-gray-50/80 backdrop-blur-xl border-t border-gray-200/50">
             {/* Mobile Navigation Items */}
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="flex items-center gap-3 px-4 py-4 text-gray-700 font-semibold rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200/50"
@@ -205,7 +206,7 @@ const Navbar = () => {
               >
                 <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
                 {item.name}
-              </a>
+              </Link>
             ))}
 
             {/* Mobile Startups */}
@@ -229,7 +230,7 @@ const Navbar = () => {
               {isStartupsOpen && (
                 <div className="mt-2 space-y-2 bg-white/80 rounded-xl p-3 shadow-inner border border-gray-200/50 backdrop-blur-sm">
                   {startups.map((startup) => (
-                    <a
+                    <Link
                       key={startup.name}
                       href={`/startup/${startup.name.toLowerCase().replace(/ /g, "-")}`}
                       className="flex items-center gap-4 px-4 py-3 text-gray-700 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-200 border border-transparent hover:border-blue-200/50"
@@ -240,21 +241,21 @@ const Navbar = () => {
                         <div className="font-semibold text-sm">{startup.name}</div>
                         <div className="text-xs text-gray-500 mt-0.5">{startup.description}</div>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
 
             {/* Mobile CTA */}
-            <a
+            <Link
               href="/join"
               className="flex items-center justify-center gap-2 w-full px-4 py-4 text-gray-900 bg-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 active:scale-95 mt-4 border border-gray-900"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               View Whitepaper
               <ExternalLink size={16} />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

@@ -1,5 +1,4 @@
 // app/about/page.tsx
-import { ArrowRight } from "lucide-react";
 
 const AboutPage = () => {
   const values = [
@@ -23,14 +22,14 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Innovating Africa's Future <br />
+          Innovating Africa&apos;s Future <br />
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
             One Business at a Time
           </span>
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Amibara Global PLC is a diversified group empowering innovation across
-          commerce, education, finance, and media — connecting Africa's markets
+          commerce, education, finance, and media — connecting Africa&apos;s markets
           with technology and creativity.
         </p>
       </section>
@@ -53,7 +52,7 @@ const AboutPage = () => {
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">
               To empower innovation across commerce, education, finance, and
-              media — connecting Africa's markets with technology and creativity
+              media — connecting Africa&apos;s markets with technology and creativity
               through sustainable business practices.
             </p>
           </div>
@@ -67,7 +66,7 @@ const AboutPage = () => {
               <div className="h-1 w-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full" />
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              To become Africa's most trusted innovation group, driving
+              To become Africa&apos;s most trusted innovation group, driving
               sustainable growth and digital inclusion across all industries.
             </p>
           </div>

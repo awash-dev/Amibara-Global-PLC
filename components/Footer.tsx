@@ -1,5 +1,6 @@
 "use client";
 import { Mail, Phone, MapPin, Github, Linkedin, Globe } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -29,28 +30,28 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/about"
                   className="text-sm text-gray-600 hover:text-blue-700 transition-all duration-200"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#startups"
                   className="text-sm text-gray-600 hover:text-blue-700 transition-all duration-200"
                 >
                   Our Startups
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contact"
                   className="text-sm text-gray-600 hover:text-blue-700 transition-all duration-200"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -71,12 +72,12 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-600">
                 <Mail size={16} className="text-blue-500" />
-                <a
+                <Link
                   href="mailto:info@amibara.global"
                   className="hover:text-blue-700 transition-all duration-200"
                 >
                   info@amibara.global
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -94,12 +95,12 @@ const Footer = () => {
 
           <p className="text-xs text-gray-500 text-center sm:text-right">
             Designed by{" "}
-            <a
+            <Link
               href="https://github.com/awash-dev"
               className="font-medium text-blue-700 hover:underline"
             >
               Awash Dev
-            </a>
+            </Link>
           </p>
         </div>
       </div>
