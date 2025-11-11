@@ -10,11 +10,9 @@ import {
   Building2,
   Store,
   ChevronRight,
-  Phone,
-  Mail,
-  MapPin,
 } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const FurnitureStartupPage = () => {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -63,13 +61,21 @@ const FurnitureStartupPage = () => {
     }, 1500);
   };
 
+  interface ButtonProps {
+    variant?: "primary" | "secondary" | "outline";
+    children: React.ReactNode;
+    onClick?: () => void;
+    disabled?: boolean;
+    className?: string;
+  }
+
   const Button = ({
     variant = "primary",
     children,
     onClick,
     disabled,
     className = "",
-  }) => {
+  }: ButtonProps) => {
     const baseStyles =
       "px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-2";
     const variants = {
@@ -93,15 +99,6 @@ const FurnitureStartupPage = () => {
       </button>
     );
   };
-
-  const StatCard = ({ value, label }) => (
-    <div className="group hover:scale-105 transition-transform duration-300">
-      <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-        {value}
-      </div>
-      <div className="text-gray-600 mt-1">{label}</div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white overflow-hidden">
@@ -143,9 +140,11 @@ const FurnitureStartupPage = () => {
 
               <div className="flex items-center gap-6">
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image
                     src="/author.jpg"
                     alt="Mohammed Hussen"
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full border-2 border-orange-200"
                   />
                   <div>
