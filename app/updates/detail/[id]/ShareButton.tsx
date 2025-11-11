@@ -27,7 +27,7 @@ export default function ShareButton({
     setCurrentUrl(window.location.href);
     
     // Check if Web Share API is available
-    if (navigator.share) {
+    if (typeof navigator.share === "function") {
       setCanShare(true);
     }
   }, []);
