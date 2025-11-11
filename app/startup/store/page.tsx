@@ -65,19 +65,17 @@ const StoreStartupPage = () => {
     }, 1500);
   };
 
+  interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    variant?: "primary" | "secondary";
+    children: React.ReactNode;
+  }
+
   const Button = ({
     variant = "primary",
     children,
-    onClick,
     className = "",
     ...props
-  }: {
-    variant?: "primary" | "secondary";
-    children: React.ReactNode;
-    onClick?: () => void;
-    className?: string;
-    [key: string]: any;
-  }) => {
+  }: ButtonProps) => {
     const styles = {
       primary:
         "bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:shadow-2xl hover:scale-105",
@@ -87,7 +85,6 @@ const StoreStartupPage = () => {
 
     return (
       <button
-        onClick={onClick}
         className={`px-6 py-3 rounded-2xl font-medium transition-all duration-300 flex items-center gap-2 ${styles[variant]} ${className}`}
         {...props}
       >
