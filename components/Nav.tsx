@@ -214,7 +214,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Mobile Startups */}
+            {/* Mobile Startup */}
             <div className="space-y-2">
               <button
                 onClick={() => setIsStartupsOpen(!isStartupsOpen)}
