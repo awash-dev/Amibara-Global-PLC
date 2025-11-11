@@ -36,23 +36,28 @@ const Navbar = () => {
   const startups = [
     { 
       name: "Store",  
-      description: "E-commerce platform"
+      description: "E-commerce platform",
+      color: "from-blue-500 to-cyan-500"
     },
     { 
       name: "Furniture",  
-      description: "Modern furniture solutions"
+      description: "Modern furniture solutions",
+      color: "from-orange-500 to-amber-500"
     },
     { 
       name: "LearningHub",  
-      description: "Educational technology"
+      description: "Educational technology",
+      color: "from-purple-500 to-pink-500"
     },
     { 
       name: "Fintech",  
-      description: "Financial innovation"
+      description: "Financial innovation",
+      color: "from-green-500 to-emerald-500"
     },
     { 
       name: "Media",  
-      description: "Content and entertainment"
+      description: "Content and entertainment",
+      color: "from-rose-500 to-red-500"
     },
   ];
 
@@ -136,7 +141,7 @@ const Navbar = () => {
                 {isStartupsOpen && (
                   <div className="absolute left-0 mt-3 w-80 bg-white/95 backdrop-blur-2xl rounded-2xl shadow-2xl border border-gray-200/50 overflow-hidden animate-in fade-in slide-in-from-top-5 duration-300">
                     <div className="p-2 space-y-1">
-                      {startups.map((startup, idx) => (
+                      {startups.map((startup) => (
                         <Link
                           key={startup.name}
                           href={`/startup/${startup.name.toLowerCase().replace(/ /g, "-")}`}
@@ -216,7 +221,7 @@ const Navbar = () => {
                 className="flex items-center justify-between w-full px-4 py-4 bg-white text-black rounded-xl font-semibold shadow-lg transition-all duration-300 active:scale-95"
               >
                 <span className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full" />
+                  <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
                   Our Startups
                 </span>
                 <ChevronDown
@@ -249,7 +254,7 @@ const Navbar = () => {
 
             {/* Mobile CTA */}
             <Link
-              href="/join"
+              href="/"
               className="flex items-center justify-center gap-2 w-full px-4 py-4 text-gray-900 bg-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 active:scale-95 mt-4 border border-gray-900"
               onClick={() => setIsMobileMenuOpen(false)}
             >
