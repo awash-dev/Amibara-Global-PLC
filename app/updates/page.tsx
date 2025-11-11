@@ -1,4 +1,4 @@
-// app/updates/page.tsx (Update the card to link to details)
+// app/updates/page.tsx
 import { Calendar, Sparkles } from "lucide-react";
 import { getUpdates } from "@/lib/actions/updates";
 import Link from "next/link";
@@ -22,7 +22,7 @@ const UpdatesPage = async () => {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-medium text-blue-700 mb-6">
           <Sparkles size={16} />
-          What's New
+          What&apos;s New
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Latest Updates &{" "}
@@ -31,7 +31,7 @@ const UpdatesPage = async () => {
           </span>
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Stay informed about Amibara Global's latest milestones, projects, and
+          Stay informed about Amibara Global&apos;s latest milestones, projects, and
           innovations across our startup divisions.
         </p>
       </section>

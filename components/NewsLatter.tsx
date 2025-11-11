@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Mail, Send, Bell } from "lucide-react";
 
@@ -38,7 +38,7 @@ export default function Newsletter() {
               Welcome Aboard! 🎉
             </h3>
             <p className="text-emerald-700/80 text-lg mb-2 font-medium">
-              You're successfully subscribed
+              You&apos;re successfully subscribed
             </p>
             <p className="text-emerald-600/70 text-sm">
               Get ready for exclusive updates and insights

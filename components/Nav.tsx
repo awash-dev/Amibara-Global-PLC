@@ -75,7 +75,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo Section - Enhanced */}
-            <a 
+            <Link
               href="/" 
               className="flex items-center gap-3 group cursor-pointer"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -101,20 +101,20 @@ const Navbar = () => {
                   PLC
                 </span>
               </div>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
               {/* Navigation Items */}
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors duration-300 relative group"
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300" />
-                </a>
+                </Link>
               ))}
 
               {/* Our Startups - Enhanced Dropdown */}

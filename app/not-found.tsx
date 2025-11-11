@@ -1,6 +1,6 @@
 // app/not-found.tsx
 import Link from "next/link";
-import { Home, Search, ArrowLeft, Compass } from "lucide-react";
+import { Home, Search, Compass } from "lucide-react";
 
 export default function NotFound() {
   return (
@@ -31,7 +31,7 @@ export default function NotFound() {
           Oops! Page Not Found
         </h2>
         <p className="text-lg text-gray-600 mb-8 max-w-md mx-auto">
-          The page you're looking for seems to have wandered off. Let's get you
+          The page you&apos;re looking for seems to have wandered off. Let&apos;s get you
           back on track.
         </p>
 

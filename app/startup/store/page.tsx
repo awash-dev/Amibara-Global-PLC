@@ -13,9 +13,6 @@ import {
   Sparkles,
   Clock,
   Award,
-  Wifi,
-  Battery,
-  Signal,
   Download,
 } from "lucide-react";
 import { useState } from "react";
@@ -74,6 +71,12 @@ const StoreStartupPage = () => {
     onClick,
     className = "",
     ...props
+  }: {
+    variant?: "primary" | "secondary";
+    children: React.ReactNode;
+    onClick?: () => void;
+    className?: string;
+    [key: string]: any;
   }) => {
     const styles = {
       primary:
@@ -110,7 +113,7 @@ const StoreStartupPage = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 rounded-full">
                 <ShoppingBag size={16} className="text-indigo-600" />
                 <span className="text-sm font-semibold text-indigo-700">
-                  Ethiopia's Digital Marketplace
+                  Ethiopia&apos;s Digital Marketplace
                 </span>
               </div>
 

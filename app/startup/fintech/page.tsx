@@ -10,13 +10,10 @@ import {
   ArrowDownRight,
   ArrowUpRight,
   Lock,
-  Gem,
   ArrowRight,
   ChevronRight,
   Zap,
-  TrendingUp,
   Smartphone,
-  Globe,
   Sparkles,
   Users,
   Target,
@@ -193,7 +190,7 @@ export default function FintechPage() {
                   </span>
                 </h1>
                 <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Building Ethiopia's next-generation digital wallet. 
+                  Building Ethiopia&apos;s next-generation digital wallet. 
                   <span className="block mt-2 font-semibold text-green-700">
                     Bootstrapped. Independent. Customer-First.
                   </span>

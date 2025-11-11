@@ -113,14 +113,14 @@ export default async function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200/50 rounded-full text-sm font-semibold text-blue-700 mb-6 shadow-sm">
                 <Zap size={16} className="text-blue-600" />
-                Building Tomorrow's Businesses
+                Building Tomorrow&apos;s Businesses
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-[1.1]">
                 Innovating{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    Africa's Future
+                    Africa&apos;s Future
                   </span>
                   <span className="absolute bottom-2 left-0 w-full h-4 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 opacity-30 -z-10" />
                 </span>
@@ -268,7 +268,7 @@ export default async function HomePage() {
 
           {/* Stats */}
           <div className="mt-24 grid grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="group text-center relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -313,7 +313,7 @@ export default async function HomePage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Five innovative ventures driving Africa's digital transformation
+              Five innovative ventures driving Africa&apos;s digital transformation
             </p>
           </div>
 
@@ -395,7 +395,7 @@ export default async function HomePage() {
                     More Coming Soon
                   </h3>
                   <p className="text-gray-600">
-                    We're constantly expanding our innovation ecosystem
+                    We&apos;re constantly expanding our innovation ecosystem
                   </p>
                 </div>
               </div>

@@ -1,9 +1,9 @@
-// app/admin/updates/DeleteButton.tsx
+// app/create/manage/DeleteButton.tsx
 "use client";
 
 import { useState, useTransition } from "react";
 import { deleteUpdate } from "@/lib/actions/updates";
-import { Trash2, Loader2, X, AlertTriangle } from "lucide-react";
+import { Trash2, Loader2, AlertTriangle } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function DeleteButton({ updateId, updateTitle }: { 
@@ -55,7 +55,7 @@ export default function DeleteButton({ updateId, updateTitle }: {
               Are you sure you want to delete
             </p>
             <p className="text-gray-900 font-semibold text-center mb-6">
-              "{updateTitle}"
+              &quot;{updateTitle}&quot;
             </p>
             <p className="text-sm text-red-600 text-center mb-6">
               This action cannot be undone.

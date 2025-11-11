@@ -3,22 +3,16 @@
 import {
   GraduationCap,
   BookOpen,
-  Award,
   Users,
-  TrendingUp,
   Clock,
   Video,
   FileText,
   Brain,
   Target,
   BadgeCheck,
-  Lightbulb,
   PlayCircle,
-  CheckCircle,
-  BarChart3,
   ArrowRight,
   Download,
-  Zap,
   ChevronRight,
 } from "lucide-react";
 import { useState } from "react";
@@ -76,6 +70,12 @@ const LearningHubPage = () => {
     onClick,
     disabled,
     className = "",
+  }: {
+    variant?: "primary" | "secondary" | "outline";
+    children: React.ReactNode;
+    onClick?: () => void;
+    disabled?: boolean;
+    className?: string;
   }) => {
     const baseStyles =
       "px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-2";
@@ -122,7 +122,7 @@ const LearningHubPage = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
                 <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-blue-700">
-                  Ethiopia's #1 Learning Platform
+                  Ethiopia&apos;s #1 Learning Platform
                 </span>
               </div>
 
