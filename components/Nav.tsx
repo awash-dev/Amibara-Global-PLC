@@ -144,7 +144,7 @@ const Navbar = () => {
                       {startups.map((startup) => (
                         <Link
                           key={startup.name}
-                          href={`/startup/${startup.name.toLowerCase().replace(/ /g, "-")}`}
+                          href={`/startup/${startup.name.replace(/ /g, "-")}`}
                           className="flex items-center gap-4 p-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-purple-50/80 transition-all duration-200 group/item border border-transparent hover:border-blue-200/50"
                           onClick={() => setIsStartupsOpen(false)}
                         >
